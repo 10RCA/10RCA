@@ -1,0 +1,23 @@
+// BİR MAĞAZA VAR VE BU MAĞAZADA 10 KİŞİ ÇALIŞIYOR.HEPSİ EŞİT MAAŞ ALIYOR. MAAŞLARININ TOPLAMINI GÖSTERİNİZ.
+package maastoplami;
+
+import java.util.Scanner;
+
+public class Maastoplami {
+
+    
+    public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+      int TM =0;
+      System.out.println("Lütfen maaş girin : ");
+      int maas = scanner.nextInt();
+      for(int s=1; s<11; s++){
+          // BİR DİĞER YOL S=0 ; S<10 ŞEKLİNDE
+          TM=TM+maas;
+          System.out.println(s +"kişinin maaşının toplamı:" + TM);
+      }
+      
+      
+    }
+    
+}
