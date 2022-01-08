@@ -1,0 +1,62 @@
+// SWITCH CASE YAPILARINI KULLANARAK 4 İŞLEM YAPABİLDİĞİMİZ BİR HESAP MAKİNESİ YAPMA 
+package hesapmakinesi;
+
+import java.util.Scanner;
+
+public class Hesapmakinesi {
+    
+public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("******************");
+    String islemler = "1. toplama işlemi\n"
+                    + "2. çıkarma işlemi\n"
+                    + "3. çarpma işlemi\n"
+                    + "4. bölme işlemi";
+    System.out.println(islemler);
+    System.out.println("******************");
+    System.out.println("islemi seçin");
+    
+    String islem = scanner.nextLine();
+    /* farklı değer vermekten kurtulmak için 
+    int a ;
+    int b ;
+    yazıp alttaki değerlerden int silinerek de oluyor
+    */
+    switch(islem){
+        
+        case "1":
+            System.out.println("Birinci sayı");
+            int a = scanner.nextInt();
+            System.out.println("ikinci sayı");
+            int b = scanner.nextByte();
+            System.out.println(a+b);
+            break;
+        case "2":
+            System.out.println("birinci sayı");
+            int c =scanner.nextInt();
+            System.out.println("ikinci sayı");
+            int d=scanner.nextInt();
+            System.out.println(c-d);
+            break;
+        case "3":
+            System.out.println("birinci sayı");
+            int e =scanner.nextInt();
+            System.out.println("ikinci sayı");
+            int f=scanner.nextInt();
+            System.out.println(e*f);
+            break;
+        case "4":
+            System.out.println("birinci sayı");
+            double g =scanner.nextDouble();
+            System.out.println("ikinci sayı");
+            double h=scanner.nextDouble();
+            System.out.println(g/h);
+            //intli yazarsan (double)g/h yaparsan da olur
+        
+            break;
+        default : 
+            System.out.println("geçersiz");
+    }
+    }
+    
+}
