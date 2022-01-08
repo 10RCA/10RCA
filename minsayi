@@ -1,0 +1,32 @@
+package minsayi;
+
+import java.util.Scanner;
+
+
+public class Minsayi {
+
+    
+    public static void main(String[] args) {
+     
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("1.gir");
+        int a = scanner.nextInt();
+        System.out.println("2.gir");
+        int b = scanner.nextInt();
+        System.out.println("3. gir");
+        int c = scanner.nextInt();
+        
+        int min = -1;
+        if (a<=b && a<=c) {
+            min = a;
+        }
+        else if (b<=a && b<=c) {
+            min=b;
+        }
+        else {
+            min=c;
+        }
+        System.out.println("min sayı" + min);
+    }
+    
+}
