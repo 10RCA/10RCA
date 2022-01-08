@@ -1,0 +1,29 @@
+package degerdegistir;
+
+import java.util.Scanner;
+
+public class Degerdegistir {
+    
+    public static void main(String[] args) {
+    
+        Scanner scanner = new Scanner(System.in);
+        int birinci_sayi;
+        int ikinci_sayi;
+        
+        System.out.print("Birinci sayıyı giriniz ");
+        birinci_sayi = scanner.nextInt();
+        
+        System.out.print("İkinci sayıyı giriniz ");
+        ikinci_sayi = scanner.nextInt();
+        System.out.println("DEĞİŞMEDEN ÖNCE...");
+        
+        System.out.println("birinci sayı " + birinci_sayi + " ikinci sayı " + ikinci_sayi);
+        int gecici = birinci_sayi;
+        birinci_sayi = ikinci_sayi;
+        ikinci_sayi = gecici;
+        System.out.println("SAYILAR DEĞİŞTİKTEN SONRA... ");
+        System.out.println("birinci sayı " + birinci_sayi 
+                + " ikinci sayı " + ikinci_sayi);   
+     }
+    
+}
