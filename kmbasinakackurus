@@ -1,0 +1,23 @@
+package kmbasınakurus;
+
+import java.util.Scanner;
+
+public class Kmbasınakurus {
+    public static void main(String[] args) {
+    
+    
+    
+    
+    
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("aracınız kmde kaç kuruş yakıyor (örn 0,32):");
+    double kurus = scanner.nextDouble();
+    System.out.println("aracınızla kaç km gittiniz ? .");
+    int km = scanner.nextInt();
+    System.out.println("ödemeniz gereken tutar : " +( kurus * km ) + "TL'dir.");
+    
+    
+    
+    }
+    
+}
