@@ -1,0 +1,31 @@
+package ucsayi;
+
+import java.util.Scanner;
+
+public class Ucsayi {
+
+    // 3 sayıdan en büyüğünün bulma
+    public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+      System.out.println("birinci sayıyı gir");
+      int a = scanner.nextInt();
+      System.out.println("ikinci sayıyı gir");
+      int b = scanner.nextInt();
+      System.out.println("üçüncü sayıyı gir");
+      int c = scanner.nextInt();
+      
+      int maks = -1;
+      
+      if (a>=b && a>=c){
+          maks = a;
+      }
+      else if (b>=a && b>=c) {
+          maks = b;
+      } 
+      else {
+        maks  = c;
+        System.out.println("en büyük sayı " + maks);
+    }
+    }
+    
+}
