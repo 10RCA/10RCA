@@ -1,0 +1,53 @@
+package nothesabi;
+
+import java.util.Scanner;
+// Öğrenciden vize 1 vize 2 ve final notunun girilmesi isteniyor . Sınavların yüzdeleri alınıyor ve ekrana toplam not yazılıyor . Buna göre öğrencinin harf notu ve kalıp kalmadığı ekrana yazdıran programın yazıyoruz.
+// Vize 1 %30 u , Vize 2 %30 u ve Finalin %40 alıarak hesaplanacaktır//
+
+public class Nothesabi {// Public herkesin erişebileceği , Class sınıfı , Main sınıfın ismini gösterir //
+    
+public static void main(String[] args) {// Public kismına main metodun eklyoruz . Main olmadan çalışmaz. //
+    
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Vize1 : ");
+    int vize1 = scanner.nextInt();
+    System.out.print("Vize2 : ");
+    int vize2 = scanner.nextInt();
+    System.out.print("Final : ");
+    int finalnot = scanner.nextInt();
+    
+    
+    
+    double toplamnot = (vize1 * 3 / 10.0) + (vize2 * 3 / 10.0) + (finalnot * 4 / 10.0);
+    
+    if (toplamnot >= 90) {
+        
+        System.out.println("AA aldınız....");
+    }
+    else if (toplamnot >= 85) {
+         System.out.println("BA aldınız....");
+    }
+    else if (toplamnot >= 80) {
+         System.out.println("BB aldınız....");
+    }
+    else if (toplamnot >= 75) {
+         System.out.println("CB aldınız....");
+    }
+    else if (toplamnot >=70) {
+         System.out.println("CC aldınız....");
+    }
+    else if (toplamnot >= 65) {
+         System.out.println("DC aldınız....");
+    }
+    else if (toplamnot >= 60) {
+         System.out.println("DD aldınız...."); 
+         }
+    
+    else if (toplamnot >= 55) {
+         System.out.println("FD aldınız ve Kaldınız....");
+    }
+    else 
+         System.out.println("FF aldınız ve Kaldınız....");
+    }
+  
+}
