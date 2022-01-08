@@ -1,0 +1,31 @@
+//KULLANICIDAN İSTEDİĞNİZ BOY, KİLO VERİLERİYLE ENDEKSİNİ HESAPLAYINIZ.
+package kosullubkendex;
+
+import java.util.Scanner;
+
+public class Kosullubkendex {
+    public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+       System.out.println("lütfen boyunuzu giriniz");
+       double boy = scanner.nextDouble();
+       System.out.println("Lütfen kg giriniz");
+       int kg = scanner.nextInt();
+       
+       double endex = (kg/(boy*boy));
+       
+       if (endex<18.5) {
+           System.out.println("zayıf");
+       }
+       else if (endex>=18.5 && endex<25){
+        System.out.println("normal");    
+    }
+       else if (endex>=25 &&  endex<30) {
+        System.out.println("fazla kilolu");
+        
+    }
+       else {
+           System.out.println("aşırı kilolu(obez)");
+     
+       }
+    }
+}
