@@ -1,4 +1,4 @@
 - 👋 Hi, I’m @10RCA
 - 👀 I’m interested in Blockchain services and Testnets.
-- 🌱 I’m currently learning Java and Solidity.
-- 📫 How to reach me 10lardanur@gmail.com
+- 🌱 I’m currently learning C# and Solidity.
+- 📫You can reach me 10lardanur@gmail.com
